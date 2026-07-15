@@ -1,0 +1,7 @@
+streamlit
+sentence-transformers
+chromadb
+gspread
+google-auth
+anthropic
+python-dotenv
