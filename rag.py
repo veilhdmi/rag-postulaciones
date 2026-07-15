@@ -32,6 +32,10 @@ def build_index():
     embeddings = _embedder.encode(docs).tolist()
 
     client = chromadb.EphemeralClient()
+    try:
+        client.delete_collection("postulaciones")
+    except Exception:
+        pass
     collection = client.create_collection("postulaciones")
     collection.add(
         ids=[str(i) for i in range(len(docs))],

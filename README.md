@@ -4,6 +4,8 @@ I track my job applications in a Google Sheet (company, role, status, notes, etc
 
 It's not a generic chatbot and it doesn't use some huge model — it's a small, cheap RAG setup: embeddings run locally on your machine, and only the final answer goes through an LLM.
 
+![App answering a question about a job application, company name redacted](assets/resultado_rag.jpg)
+
 ## How it works
 
 1. Reads the applications sheet through the Google Sheets API (service account).
